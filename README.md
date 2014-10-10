@@ -4,6 +4,8 @@
 
 Your seperate editor MUST be on a different Etherpad instance, you can run two instances on seperate ports quite easily.
 
+The Editbar only applies formatting edits ETC to the window on the left (master window), this is intentional.
+
 In your `settings.json`, add:
 
 ## To change your host - This is compulsary
