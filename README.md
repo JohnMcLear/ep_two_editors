@@ -1,6 +1,6 @@
 # Two Editors in One Etherpad Window *Mind Blo2\nm
 
-![much meta wow](http://i.imgur.com/5WadRjV.png)
+![much meta wow](http://i.imgur.com/9bfAnrB.png)
 
 Your seperate editor MUST be on a different Etherpad instance, you can run two instances on seperate ports quite easily.
 
