@@ -1,0 +1,14 @@
+{
+  "parts":[
+    {
+      "name": "two_editors",
+      "client_hooks": {
+        "postAceInit": "ep_two_editors/static/js/two_editors"
+      },
+      "hooks": {
+        "eejsBlock_editbarMenuLeft": "ep_two_editors/two_editors",
+        "clientVars":"ep_two_editors/two_editors:clientVars"
+      }
+    }
+  ]
+}
