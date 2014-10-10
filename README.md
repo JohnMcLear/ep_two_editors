@@ -1,25 +1,23 @@
-# Drawing and painting in Etherpad
-
-You must be running an instance [Etherdraw](https://github.com/JohnMcLear/draw).
+# Two Editors in One Etherpad Window *Mind Blo2\nm
 
 In your `settings.json`, add:
 
 ## To change your host 
 
 ```
-    "ep_draw" {
-        "host": "your.etherdrawhost.com"
+    "ep_two_editors" {
+        "host": "your.ethertwo_editorshost.com"
     }
 
     # Example
-    "ep_draw" {
+    "ep_two_editors" {
         "host": "localhost:9002"
     }
 ```
 ## To enable by Default
 
 ```
-    "ep_draw" {
+    "ep_two_editors" {
         "onByDefault": true
     }
 ```
@@ -27,14 +25,14 @@ In your `settings.json`, add:
 ## To change the icon
 
 ```
-    "ep_draw" {
+    "ep_two_editors" {
         "icon": "http://myicon.com/awesomeicon.png"
     }
 ```
 
 ## To put the icon on the right hand side of the toolbar
 ```
-    "ep_draw" {
+    "ep_two_editors" {
         "position": "right"
     }
 ```
@@ -44,10 +42,4 @@ In your `settings.json`, add:
 todo
 ====
 
-1. Make the AuthorName, padID and Authorcolor passed to draw.etherpad.org
-1. Allow setting for opacity in setting.json
-1. Document the settings required to get it working
-1. Allow a setting in the settings dropdown to hide the paint (with cookie)
-1. Find out why going outside teh canvas doesnt stop drawing
-1. Allow setting for showing Artist count or not.
-1. Clear/reset button
+1. Makle it work
