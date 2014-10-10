@@ -45,10 +45,8 @@ function enabletwo_editors(){
 
   var padID = clientVars.padId;
   console.log("prepending");
-  var url = "http://127.0.0.1:9002/p/"+padID+"_second_pad_instance";
   if($("#two_editors").length === 0){ // If it's not available already then two_editors it
-//    $("#editorcontainer").prepend("<div id=two_editors><iframe id='two_editorsEmbed' src='//"+two_editors_host+"/p/"+padID+"_two_editors?showControls=false&authorName="+authorName+"&authorColor="+authorColor+"' width='100%' height='100%' style='border:none' frameborder='0' scrolling='no'></iframe></div>");
-    $("#editorcontainer").prepend("<div id=two_editors><iframe id='two_editorsEmbed' src='"+url+"?showControls=false' width='100%' height='100%'></iframe></div>");
+    $("#editorcontainer").prepend("<div id=two_editors><iframe id='two_editorsEmbed' src='//"+two_editors_host+"/p/"+padID+"_two_editors?useMonospaceFont=true&showControls=false&authorName="+authorName+"&authorColor="+authorColor+"' width='100%' height='100%' style='border:none' frameborder='0' scrolling='no'></iframe></div>");
   }
   clientVars.ep_two_editors.enabled = true;
   showtwo_editors();
@@ -56,7 +54,7 @@ function enabletwo_editors(){
 
 function showtwo_editors(){
   $('iframe[name="ace_outer"]').css("width","50%");
-  $("#two_editors").css({"z-index":"999999", "position":"absolute", "top":"0px", "right":"0px", "height":"100%", "width":"50%", "border":"1px solid #ccc"}).show();
+  $("#two_editors").css({"z-index":"999999", "position":"absolute", "top":"0px", "right":"0px", "height":"100%", "width":"50%", "border-left":"1px solid #ccc"}).show();
   $("#two_editorsEmbed").show().css({"overflow":"hidden"});
   if(clientVars.ep_two_editors.enabled !== true){
     enabletwo_editors();
