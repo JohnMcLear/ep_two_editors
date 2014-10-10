@@ -1,8 +1,10 @@
 # Two Editors in One Etherpad Window *Mind Blo2\nm
 
+Your seperate editor MUST be on a different Etherpad instance, you can run two instances on seperate ports quite easily.
+
 In your `settings.json`, add:
 
-## To change your host 
+## To change your host - This is compulsary
 
 ```
     "ep_two_editors" {
