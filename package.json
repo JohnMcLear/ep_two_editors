@@ -16,10 +16,29 @@
   "engines": {
     "node": "*"
   },
-  "_id": "ep_two_editors@0.1.1",
   "readme": "ERROR: No README.md file found!",
   "dist": {
     "shasum": "927231aee0f19afa7a80fbfff8348401f15b0595"
   },
-  "_from": "ep_two_editors"
+  "_from": "ep_two_editors",
+  "funding": {
+    "type": "individual",
+    "url": "http://etherpad.org/"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-etherpad": "^1.0.8",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "etherpad/plugin"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
 }
